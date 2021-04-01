@@ -28,4 +28,38 @@
 
 .main-text{
     color: white;
+    font-size: 48px;
+}
+
+.grid__layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products{
+    background-color: black;
+}
+
+.products > ul > li > span{
+    color: white;
+    font-size: 24px;
+}
+
+.products > ul > li:before{
+    content: '';
+    display: inline-block;
+    height:16px;
+    width: 16px;
+    vertical-align: middle;
+    border-radius:50%;
+    background-color:#e69e44;
+    margin-right:5px;
+}
+
+.telephone{
+    padding: 10px 10px;
+    color: white;
+    font-size:32px;
+    float: right;
+    background-color: #e69e44;
 }
