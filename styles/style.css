@@ -1,0 +1,31 @@
+#page_wrapper{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 95%;
+    height: 20%;
+    background: url('../assets/img/back.jpg');
+    background-size: cover;
+}
+
+.logo-place{
+    background:transparent;
+    padding-bottom: 50px;
+}
+
+.logo-img{
+    /* box-shadow: 0 0 1px rgba(0,0,0,0.5); */
+}
+
+.main-header{
+    width: 85%;
+    background-color: #e09c47;
+    opacity: 0.9;
+}
+
+.main-text{
+    color: white;
+}
