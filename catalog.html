@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="styles/default.css">
+    <script src="js/main.js" defer></script>
     <title>Catalog</title>
 </head>
 
@@ -36,41 +37,67 @@
                 </div>
             </div>
         </header>
-    <section class="grid__layout">
-        <div class="products__left products__all">
-            <div class="products__logo_left">
-                <h2>Oferta zawiera</h2>
+        <section class="grid__layout">
+            <div class="products__left products__all">
+                <div class="products__logo_left">
+                    <h2>Oferta zawiera</h2>
+                </div>
+                <ul class="left-items">
+                    <li><a id="left-item-1"class="left-item">Meble z przeznaczeniem do ogrodu lub na balkon</a></li>
+                    <li><a id="left-item-2"class="left-item">Stoły ogrodowe</a></li>
+                    <li><a id="left-item-3"class="left-item">Paleniska pod ognisko</a></li>
+                    <li><a id="left-item-4"class="left-item">Grille, rożna, mangały</a></li>
+                    <li><a id="left-item-5"class="left-item">Donice ogrodowe</a></li>
+                    <li><a id="left-item-6"class="left-item">Donice balkonowe</a></li>
+                    <li><a id="left-item-7"class="left-item">Stoliki kawowe</a></li>
+                </ul>
+                <div class="products__image_left">
+                    <img src="assets/img/product-left.jpg" alt="product-left">
+                </div>
             </div>
-            <ul>
-                <li><span><a>Meble  z przeznaczeniem do ogrodu lub na balkon</a></span></li>
-                <li><span><a>Stoły ogrodowe</a></span></li>
-                <li><span><a>Paleniska pod ognisko</a></span></li>
-                <li><span><a>Grille, rożna, mangały</a></span></li>
-                <li><span><a>Donice ogrodowe</a></span></li>
-                <li><span><a>Donice balkonowe</a></span></li>
-                <li><span><a>Stoliki kawowe</a></span></li>   
-            </ul>
-            <div class="products__image_left"></div>
-        </div>
-        <div class="products__right products__all">
-            <div class="products__image_right"></div>
-            <div class="products__logo_right">
-                <h2>Nasze atuty:</h2>
+            <div class="products__right products__all">
+                <div class="products__image_right">
+                    <img src="assets/img/product-right.jpg" alt="product-right">
+                </div>
+                <div class="products__logo_right">
+                    <h2>Nasze atuty:</h2>
+                </div>
+                <ul>
+                    <li><a class="right-item">oferowane przez nas produkty są modelowane w 3D i po akceptacji klienta
+                            zostają przekierowane do produkcji</a></li>
+                    <li><a class="right-item">zastosowane materiały zapewniają bardzo długa żywotność mebli</a></li>
+                    <li><a class="right-item">maksymalne wykorzystanie przestrzeni</a></li>
+                    <li><a class="right-item">szybki czas realizacji zlecenia</a></li>
+                </ul>
+                <div class="telephone">
+                    <p>Nr telefony: +48 505 015 898</p>
+                    <p>Email: steelfeet123@gmail.com</p>
+                    <p>Strona steelfeet.pl</p>
+                </div>
             </div>
-            <ul>
-                <li><span><a>oferowane przez nas produkty są modelowane w 3D i po akceptacji klienta zostają przekierowane do produkcji</a></span></li>
-                <li><span><a>zastosowane materiały zapewniają bardzo długa żywotność mebli</a></span></li>
-                <li><span><a>maksymalne wykorzystanie przestrzeni</a></span></li>
-                <li><span><a>szybki czas realizacji zlecenia</a></span></li>   
-            </ul>
-            <div class="telephone">
-                <p>Nr telefony: +48 505 015 898</p>
-                <p>Email: steelfeet123@gmail.com</p>
-                <p>Strona steelfeet.pl</p>
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
+    <div class="modal">
+		<div class="modal__block">
+			<button class="modal__close">✘</button>
+			<h2 class="modal__subtitle">Доставка и оплата</h2>
+			<form action="">
+				<h3 class="modal__title">Смартфон Apple iPhone 12 Pro 128GB Graphite</h3>
+				<label class="modal__label">
+					<span class="modal__label-text">Куда доставить</span>
+					<input class="modal__input" type="text">
+				</label>
+				<label class="modal__label">
+					<span class="modal__label-text">Кому</span>
+					<input class="modal__input" type="text">
+				</label>
+				<label class="modal__label">
+					<span class="modal__label-text">Телефон</span>
+					<input class="modal__input" type="text">
+				</label>
+				<button type="submit" class="button button_buy modal__submit">Заказать доставку</button>
+			</form>
+		</div>
+	</div>
 </body>
-
 </html>
