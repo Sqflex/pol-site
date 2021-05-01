@@ -16,13 +16,17 @@
     background-size: cover;
 }
 
-.logo__place{
-    background:transparent;
+.main__logo{
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 50px;
 }
 
 .logo__img{
-    /* box-shadow: 0 0 1px rgba(0,0,0,0.5); */
+     /* box-shadow: 0 0 1px rgba(0,0,0,0.5); */
+     max-width: 100%;
+     height: auto;
+     padding-right: 0.5em;
 }
 
 .main-header{
@@ -31,9 +35,12 @@
     opacity: 0.9;
 }
 
-.main-text{
+.logo__text{
     color: white;
-    font-size: 48px;
+    font-size: 2.25em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
 }
 
 .grid__layout{
@@ -57,7 +64,12 @@
 }
 
 .products__left > ul > li{
+    cursor: pointer;
     color: #171717;
+}
+
+.left-item:hover{
+    color: #437DD4;
 }
 
 .products__right > ul > li{
@@ -151,7 +163,33 @@
 }
 /* --- media ----*/
 
+@media (max-width: 1217px){
+    .logo__text{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1087px){
+    .main__logo{
+        padding-bottom: 0;
+    }
+    .logo__text{
+        font-size: 1.75em;
+        padding-right: 0.25em;
+    }
+}
+
 @media (max-width: 900px) {
+    .main__logo{
+        display: block;
+    }
+
+    .logo__text{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 1em 1em 0 1em;
+    }
+
     #page_wrapper{
         width: 100%;
     }
@@ -203,7 +241,7 @@
 }
 
 @media (max-width: 550px) {
-    .logo__block h1{
+    .logo__text{
         font-size: 2em;
     }
     .products__left > ul > li > a{
@@ -219,7 +257,7 @@
 }
 
 @media (max-width: 450px) {
-    .logo__block h1{
+    .logo__text{
         font-size: 1.8em;
     }
     .products__left > ul > li > a{
