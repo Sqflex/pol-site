@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="js/swiper-bundle.min.js">
     <script src="js/main.js" defer></script>
     <title>Catalog</title>
 </head>
@@ -15,12 +17,12 @@
     <div id="page_wrapper">
         <header class="logo__header">
             <div class="main__logo">
-                    <img class="logo__img" src="assets/img/logo.PNG" alt="logo">
-                        <h1 class="logo__text">Naszą firmę tworzy zespół dynamicznych i młodych ludzi, który pragnie
-                            dostarczyć państwu elementy życia codziennego pozwalający spędzić
-                            przyjemny czas w najbliższym przydomowym otoczeniu.</h1>
+                <img class="logo__img" src="assets/img/logo.PNG" alt="logo">
+                <h1 class="logo__text">Naszą firmę tworzy zespół dynamicznych i młodych ludzi, który pragnie
+                    dostarczyć państwu elementy życia codziennego pozwalający spędzić
+                    przyjemny czas w najbliższym przydomowym otoczeniu.</h1>
             </div>
-            <div class="photo__collage">
+            <!-- <div class="photo__collage">
                 <div class="photo_item">
                     <img src="assets/img/collage/collage1.png">
                 </div>
@@ -33,6 +35,37 @@
                 <div class="photo_item">
                     <img src="assets/img/collage/collage4.jpg">
                 </div>
+            </div> -->
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="photo_item-slider">
+                            <img src="assets/img/collage/collage1.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photo_item-slider">
+                            <img src="assets/img/collage/collage2.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photo_item-slider">
+                            <img src="assets/img/collage/collage3.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photo_item-slider">
+                            <img src="assets/img/collage/collage4.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </header>
         <section class="grid__layout">
@@ -41,13 +74,13 @@
                     <h2>Oferta zawiera</h2>
                 </div>
                 <ul class="left-items">
-                    <li><a id="left-item-1"class="left-item">Meble z przeznaczeniem do ogrodu lub na balkon</a></li>
-                    <li><a id="left-item-2"class="left-item">Stoły ogrodowe</a></li>
-                    <li><a id="left-item-3"class="left-item">Paleniska pod ognisko</a></li>
-                    <li><a id="left-item-4"class="left-item">Grille, rożna, mangały</a></li>
-                    <li><a id="left-item-5"class="left-item">Donice ogrodowe</a></li>
-                    <li><a id="left-item-6"class="left-item">Donice balkonowe</a></li>
-                    <li><a id="left-item-7"class="left-item">Stoliki kawowe</a></li>
+                    <li><a id="left-item-1" class="left-item">Meble z przeznaczeniem do ogrodu lub na balkon</a></li>
+                    <li><a id="left-item-2" class="left-item">Stoły ogrodowe</a></li>
+                    <li><a id="left-item-3" class="left-item">Paleniska pod ognisko</a></li>
+                    <li><a id="left-item-4" class="left-item">Grille, rożna, mangały</a></li>
+                    <li><a id="left-item-5" class="left-item">Donice ogrodowe</a></li>
+                    <li><a id="left-item-6" class="left-item">Donice balkonowe</a></li>
+                    <li><a id="left-item-7" class="left-item">Stoliki kawowe</a></li>
                 </ul>
                 <div class="products__image_left">
                     <img src="assets/img/product-left.jpg" alt="product-left">
@@ -55,7 +88,7 @@
             </div>
             <div class="products__right products__all">
                 <div class="products__image_right">
-                    <img class="image__right"src="assets/img/product-right.jpg" alt="product-right">
+                    <img class="image__right" src="assets/img/product-right.jpg" alt="product-right">
                 </div>
                 <div class="products__logo_right">
                     <h2>Nasze atuty:</h2>
@@ -97,6 +130,7 @@
             </div>
         </section>
     </div>
-    
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 </body>
+
 </html>

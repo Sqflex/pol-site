@@ -157,6 +157,12 @@
     height: auto;
 }
 
+.photo_item-slider{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
 .image__right{
     max-width: 100%;
     height: auto;
