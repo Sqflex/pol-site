@@ -7,7 +7,7 @@ const modal = () => {
     leftItems.addEventListener('click', (event) => {
         modalBlock.classList.add('open');
         modalSubtitle.textContent = event.target.textContent;
-        console.log(event.target);
+        event.target.style = "color: #437DD4"
     })
 
     modalBlock.addEventListener('click', (event) => {

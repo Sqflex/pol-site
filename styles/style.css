@@ -73,6 +73,10 @@
     color: #437DD4;
 }
 
+.left-item:active{
+    color: #437DD4;
+}
+
 .products__right > ul > li{
     color: white;
 }
